@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nback3"
+    tools:context="com.example.minimart.o_menue">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:translationX="0dp"
+        android:translationY="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:background="@drawable/shapeback">
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/cart"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/cart" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/cart"
+                android:layout_marginTop="5dp"
+                android:text="MINI MART"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/pquantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/title"
+
+                android:text="Homagama"
+                android:textSize="12sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/title"
+                android:layout_marginTop="1dp"
+                android:textSize="30dp"
+                android:text="Catagories"
+                android:textColor="@color/white"
+                android:translationY="15dp"/>
+
+
+
+        </RelativeLayout>
+        <Button
+            android:id="@+id/diliveredto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/design_default_color_primary"
+            android:padding="1dp"
+            android:text="Deliver To"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="0dp"
+            android:elevation="0dp"
+            android:orientation="horizontal"
+            android:translationY="0dp"
+            app:fabCustomSize="70dp">
+
+
+            <Button
+
+                android:id="@+id/rice"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:foreground="@drawable/o_rice"
+                android:rotationY="0"
+                android:translationX="20dp"
+                app:srcCompat="@drawable/o_rice" />
+
+            <Button
+
+                android:id="@+id/vegetables"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:foreground="@drawable/o_vegetables"
+                android:rotationY="0"
+                android:translationX="30dp"
+                app:srcCompat="@drawable/o_vegetables" />
+
+            <Button
+
+                android:id="@+id/fruits"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:foreground="@drawable/o_fruits"
+                android:rotationY="0"
+                android:translationX="40dp"
+                app:srcCompat="@drawable/o_fruits" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="0dp"
+            android:elevation="0dp"
+            android:orientation="horizontal"
+            android:translationY="20dp"
+            app:fabCustomSize="70dp">
+
+
+            <Button
+
+                android:id="@+id/meats"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:foreground="@drawable/o_meats"
+                android:translationX="20dp"
+                app:srcCompat="@drawable/o_meats" />
+
+            <Button
+
+                android:id="@+id/bakery"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:foreground="@drawable/o_bakery"
+                android:translationX="30dp"
+                app:srcCompat="@drawable/o_bakery" />
+
+            <Button
+
+                android:id="@+id/beverages"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:foreground="@drawable/o_beverages"
+                android:translationX="40dp"
+                app:srcCompat="@drawable/o_beverages" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="0dp"
+            android:elevation="0dp"
+            android:orientation="horizontal"
+            android:translationY="30dp"
+            app:fabCustomSize="70dp">
+
+
+            <Button
+
+                android:id="@+id/pharmacy"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:foreground="@drawable/o_pharmacy"
+                android:translationX="20dp"
+                app:srcCompat="@drawable/o_pharmacy" />
+
+            <Button
+
+                android:id="@+id/snacks"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:foreground="@drawable/o_snacks"
+                android:translationX="30dp"
+                app:srcCompat="@drawable/o_snacks" />
+
+            <Button
+
+                android:id="@+id/baby"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:foreground="@drawable/o_baby"
+                android:translationX="40dp"
+                app:srcCompat="@drawable/o_baby" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="100dp"
+            android:elevation="0dp"
+            android:orientation="horizontal"
+            android:translationY="40dp"
+            app:fabCustomSize="70dp">
+
+
+            <Button
+
+                android:id="@+id/personalcare"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:foreground="@drawable/o_personalcare"
+                android:translationX="20dp"
+                app:srcCompat="@drawable/o_personalcare" />
+
+            <Button
+
+                android:id="@+id/household"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:foreground="@drawable/o_household"
+                android:translationX="30dp"
+                app:srcCompat="@drawable/o_household" />
+
+            <Button
+
+                android:id="@+id/tea"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:foreground="@drawable/o_tea"
+                android:translationX="40dp"
+                app:srcCompat="@drawable/o_tea" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#B5B3B3"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/itemtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iterm title"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/itemprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemtitle"
+        android:gravity="center"
+        android:text="10"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemtitle"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/itempriceEach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="10KG"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/itemqantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="[2]"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/itemremove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemtitle"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Remove"
+        android:textColor="#FFEF0505"/>
+
+    <view
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/itemremove"
+        android:background="#FFEF0505"
+        />
+
+
+
+</RelativeLayout>
+
+

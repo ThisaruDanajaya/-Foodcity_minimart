@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.minimart.o_fruits"
+    android:background="@drawable/nback2"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        android:translationY="0dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:background="@drawable/shapeback">
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/cart"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/cart" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/cart"
+                android:layout_marginTop="5dp"
+                android:text="MINI MART"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/pquantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/title"
+
+                android:text="Homagama"
+                android:textSize="12sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/title"
+                android:layout_marginTop="1dp"
+                android:textSize="30dp"
+                android:text="Fruits"
+                android:textColor="@color/white"
+                android:translationY="15dp"/>
+
+
+
+        </RelativeLayout>
+        <Button
+            android:id="@+id/diliveredto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/design_default_color_primary"
+            android:padding="1dp"
+            android:text="Deliver To"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="0dp"
+            android:elevation="0dp"
+            android:orientation="horizontal"
+            app:fabCustomSize="70dp">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:rotationY="0"
+                android:translationX="4dp"
+                app:srcCompat="@drawable/o_apple" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_weight="1.5"
+                    android:text="Apple"
+                    android:translationX="5dp"
+                    android:translationY="10dp" />
+
+                <EditText
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:layout_weight="1.5"
+                    android:text="1 apple - Rs.30/="
+                    android:translationX="5dp"
+                    android:translationY="15dp" />
+
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:hint="Quantity"
+                    android:inputType="number"
+                    android:translationX="5dp"
+                    android:translationY="5dp" />
+
+
+
+                <Button
+                    android:id="@+id/apple_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_weight="2"
+                    android:text="add to cart"
+                    android:translationX="20dp"
+                    android:translationY="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="0dp"
+            android:elevation="0dp"
+            android:orientation="horizontal"
+            app:fabCustomSize="70dp">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:rotationY="0"
+                android:translationX="4dp"
+                app:srcCompat="@drawable/o_orange" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_weight="1.5"
+                    android:text="Orange"
+                    android:translationX="5dp"
+                    android:translationY="10dp" />
+
+                <EditText
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_weight="1.5"
+                    android:text="1 Orange - Rs.25/="
+                    android:translationX="5dp"
+                    android:translationY="15dp" />
+
+                <EditText
+
+                    android:id="@+id/ra_kg"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:hint="Quantity"
+                    android:inputType="number"
+                    android:translationX="5dp"
+                    android:translationY="5dp" />
+
+
+
+                <Button
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_weight="2"
+                    android:text="add to cart"
+                    android:translationX="20dp"
+                    android:translationY="1dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="0dp"
+            android:elevation="0dp"
+            android:orientation="horizontal"
+            app:fabCustomSize="70dp">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:rotationY="0"
+                android:translationX="4dp"
+                app:srcCompat="@drawable/o_pineapple" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_weight="1.5"
+                    android:text="Pineapple"
+                    android:translationX="5dp"
+                    android:translationY="10dp" />
+
+                <EditText
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_weight="1.5"
+                    android:text="1 KG - Rs.60/="
+                    android:translationX="5dp"
+                    android:translationY="15dp" />
+
+                <EditText
+
+                    android:layout_width="60dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:hint="KILLO"
+                    android:inputType="number"
+                    android:translationX="5dp"
+                    android:translationY="26dp" />
+
+                <EditText
+
+                    android:layout_width="80dp"
+                    android:hint="GRAM"
+                    android:layout_height="10dp"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:translationX="70dp"
+                    android:translationY="-15dp"
+                    android:inputType="number" />
+
+                <Button
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_weight="2"
+                    android:text="add to cart"
+                    android:translationX="20dp"
+                    android:translationY="1dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
